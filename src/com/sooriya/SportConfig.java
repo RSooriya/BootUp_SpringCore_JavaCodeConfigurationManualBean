@@ -8,8 +8,9 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:sport.properties")
 public class SportConfig {
 	
+// manually defining beans and injecting beans
 @Bean
-public FortuneService sadFortuneService()
+public FortuneService sadFortuneService() 
 {
 	return new SadFortuneService();
 }
